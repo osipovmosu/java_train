@@ -9,3 +9,4 @@ public class MyFirstProgram {
 			System.out.println("Расстояние между двумя точками на плоскости с координатами (" + p1.a + ", " + p1.b + ")" + " и " + "(" + p1.c + ", " + p1.d + ")" + " равняется " + p1.distance());
 		}
 }
+
