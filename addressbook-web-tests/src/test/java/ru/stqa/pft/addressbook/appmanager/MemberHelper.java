@@ -22,5 +22,17 @@ public class MemberHelper extends HelperBase {
         type(By.name("nickname"), memberData.getNickname());
         type(By.name("title"), memberData.getTitle());
     }
+
+    public void initMemberModification() {click(By.xpath("//table[@id='maintable']/tbody/tr[4]/td[8]/a/img")); }
+
+    public void submitMemberModification() { click(By.name("update")); }
+
+    public void selectMember() { click(By.name("selected[]")); }
+
+    public void deleteSelectedMembers() { click(By.xpath("//input[@value='Delete']"));}
+
+    public void acceptMemberDeletion() {
+        wd.switchTo().alert().accept();
+    }
 }
 
