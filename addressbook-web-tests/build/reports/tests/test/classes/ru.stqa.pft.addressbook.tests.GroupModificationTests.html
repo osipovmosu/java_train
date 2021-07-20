@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class ru.stqa.pft.addressbook.tests.GroupDeletionTests</title>
+<title>Test results - Class ru.stqa.pft.addressbook.tests.GroupModificationTests</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class ru.stqa.pft.addressbook.tests.GroupDeletionTests</h1>
+<h1>Class ru.stqa.pft.addressbook.tests.GroupModificationTests</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/ru.stqa.pft.addressbook.tests.html">ru.stqa.pft.addressbook.tests</a> &gt; GroupDeletionTests</div>
+<a href="../packages/ru.stqa.pft.addressbook.tests.html">ru.stqa.pft.addressbook.tests</a> &gt; GroupModificationTests</div>
 <div id="summary">
 <table>
 <tr>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.460s</div>
+<div class="counter">1.246s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testGroupDeletion</td>
-<td class="success">0.460s</td>
+<td class="success">testGroupModification</td>
+<td class="success">1.246s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,21 +90,21 @@
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1626697980456	geckodriver	INFO	Listening on 127.0.0.1:24035
-1626697981350	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;0&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\osipo\\AppData\\Local\\Temp\\rust_mozprofileHUlAOI&quot;
-1626697981682	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\osipo\\AppData\\Local\\Temp\\rust_mozprofileHUlAOI\\search.json.mozlz4&quot;, (void 0)))
-DevTools listening on ws://localhost:53683/devtools/browser/4a73cef0-23fe-447c-8579-9720defcf894
-1626697983333	Marionette	INFO	Listening on port 62115
-1626697983419	Marionette	WARN	TLS certificate errors will be ignored for this session
-июл 19, 2021 3:33:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1626763013892	geckodriver	INFO	Listening on 127.0.0.1:30641
+1626763014803	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;0&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\osipo\\AppData\\Local\\Temp\\rust_mozprofileGltxZc&quot;
+1626763015130	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\osipo\\AppData\\Local\\Temp\\rust_mozprofileGltxZc\\search.json.mozlz4&quot;, (void 0)))
+DevTools listening on ws://localhost:50040/devtools/browser/9c79fda2-4e7d-4996-80fb-bd8644139fe6
+1626763016907	Marionette	INFO	Listening on port 50018
+1626763016969	Marionette	WARN	TLS certificate errors will be ignored for this session
+июл 20, 2021 9:36:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1626697984656	Marionette	INFO	Stopped listening on port 62115
+1626763019073	Marionette	INFO	Stopped listening on port 50018
 !!! error running onStopped callback: TypeError: callback is not a function
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-1626697984963	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64&quot;  data: no] Stack trace: stop()@TargetObserver.jsm:64
+1626763019383	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64&quot;  data: no] Stack trace: stop()@TargetObserver.jsm:64
 unwatchForTabs()@TargetList.jsm:70
 unwatchForTargets()@TargetList.jsm:37
 destructor()@TargetList.jsm:109
@@ -120,7 +120,7 @@ close()@RemoteAgent.jsm:129
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1.1</a> at 19.07.2021 15:33:05</p>
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at 20.07.2021 9:36:59</p>
 </div>
 </div>
 </body>
