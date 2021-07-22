@@ -1,13 +1,14 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.MemberData;
 
 public class MemberHelper extends HelperBase {
 
-    public MemberHelper(FirefoxDriver wd) { super(wd); }
+    public MemberHelper(WebDriver wd) { super(wd); }
 
     public void initMemberCreation() { click(By.linkText("add new")); }
 
