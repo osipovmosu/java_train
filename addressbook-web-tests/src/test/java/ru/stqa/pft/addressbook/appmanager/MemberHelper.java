@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.model.GroupData;
@@ -24,7 +25,7 @@ public class MemberHelper extends HelperBase {
         type(By.name("title"), memberData.getTitle());
     }
 
-    public void initMemberModification() {click(By.xpath("//table[@id='maintable']/tbody/tr[4]/td[8]/a/img")); }
+    public void initMemberModification() {click(By.xpath("//img[@alt='Edit']")); }
 
     public void submitMemberModification() { click(By.name("update")); }
 
@@ -34,6 +35,17 @@ public class MemberHelper extends HelperBase {
 
     public void acceptMemberDeletion() {
         wd.switchTo().alert().accept();
+    }
+
+    public void createMember(MemberData member) {
+        initMemberCreation();
+        fillMemberForm(member);
+        submitMemberCreation();
+        returnToHomePage();
+    }
+
+    public boolean isThereAMember() {
+        return isElementPresent(By.name("selected[]"));
     }
 }
 
